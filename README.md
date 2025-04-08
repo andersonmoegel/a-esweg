@@ -1,63 +1,62 @@
-# Dashboard de Ações da WEG
+# WEG Stock Dashboard
 
-Este projeto é uma aplicação web simples que exibe um dashboard com os valores diários das ações da WEG (código WEGE3.SA) na Bovespa. A interface mostra os dados das ações em uma tabela e um gráfico de linha para visualização rápida das tendências.
+This project is a simple web application that displays a dashboard with daily stock data for WEG (ticker WEGE3.SA) on Bovespa. The interface presents stock information in a table along with a line chart for quick trend visualization.
 
-## Funcionalidades
-- Exibição de dados de abertura, alta, baixa e fechamento das ações em uma lista.
-- Gráfico de linha interativo para visualizar o histórico de preços de fechamento.
-- Design responsivo com estilo personalizado.
+## Features
+- Displays daily open, high, low, and close prices in a list.
+- Interactive line chart to visualize closing price history.
+- Responsive design with custom styling.
 
-## Tecnologias Utilizadas
-- HTML5, CSS3, JavaScript
-- Chart.js (para visualização de dados)
-- Alpha Vantage API (para busca de dados de ações)
+## Technologies Used
+- HTML5, CSS3, JavaScript  
+- Chart.js (for data visualization)  
+- Alpha Vantage API (to fetch stock data)
 
-## Como Executar o Projeto
-1. **Clonar o repositório:**
+## How to Run the Project
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/andersonmoegel/a-esweg.git
    cd a-esweg
    ```
 
-2. **Obter uma chave da API Alpha Vantage:**
-   - Acesse [Alpha Vantage](https://www.alphavantage.co/support/#api-key) e cadastre-se para obter uma chave de API gratuita.
+2. **Get an Alpha Vantage API key:**
+   - Visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key) and sign up to get a free API key.
 
-3. **Atualizar o arquivo `script.js`:**
-   - Substitua o valor da constante `apiKey` pela sua chave de API.
+3. **Update the `script.js` file:**
+   - Replace the value of the `apiKey` constant with your own API key.
 
-4. **Abrir o arquivo `index.html` em um navegador:**
-   - O dashboard será carregado e os dados serão exibidos.
+4. **Open the `index.html` file in a browser:**
+   - The dashboard will load and display the data.
 
-## Estrutura de Arquivos
+## File Structure
 ```
 /
-|-- index.html       # Interface principal do dashboard
-|-- styles.css       # Estilização do dashboard
-|-- script.js        # Lógica de busca e exibição de dados
+|-- index.html       # Main dashboard interface
+|-- styles.css       # Dashboard styling
+|-- script.js        # Logic for data fetching and rendering
 ```
 
-## Configuração do Projeto
-- `index.html` define a estrutura da página.
-- `styles.css` aplica o tema escuro e estiliza os componentes.
-- `script.js` faz a chamada à API Alpha Vantage e renderiza os dados.
+## Project Setup
+- `index.html` defines the page structure.
+- `styles.css` applies a dark theme and custom component styles.
+- `script.js` calls the Alpha Vantage API and renders the data.
 
-## Personalização
-- **Trocar o símbolo de ação:**
-  No arquivo `script.js`, altere o valor da constante `symbol` para a ação desejada.
+## Customization
+- **Change stock symbol:**
+  In `script.js`, modify the value of the `symbol` constant to another stock.
   ```javascript
-  const symbol = 'WEGE3.SA'; // Altere para outro símbolo, como PETR4.SA
+  const symbol = 'WEGE3.SA'; // Change to another symbol, e.g., PETR4.SA
   ```
 
-- **Estilização adicional:**
-  Edite `styles.css` para personalizar as cores e o layout do dashboard.
+- **Additional styling:**
+  Edit `styles.css` to customize the colors and layout of the dashboard.
 
-## Dependências
-- [Chart.js](https://www.chartjs.org/) para visualização de dados.
+## Dependencies
+- [Chart.js](https://www.chartjs.org/) for chart visualization.
 
-## Possíveis Melhorias
-- Adição de mais métricas, como média móvel e volume.
-- Suporte para seleção de diferentes períodos de tempo.
+## Possible Improvements
+- Add more metrics, such as moving averages and volume.
+- Support for selecting different time ranges.
 
-## Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
-
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
